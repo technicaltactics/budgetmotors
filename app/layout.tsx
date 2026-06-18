@@ -13,22 +13,22 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://budgetmotors.in'),
   title: {
-    default: 'Budget Motors | Quality Pre-Owned Cars in Wayanad, Kerala',
-    template: '%s | Budget Motors',
+    default: 'Budget Motors Wayanad | Quality Pre-Owned Cars in Wayanad, Kerala',
+    template: '%s | Budget Motors Wayanad',
   },
   description:
-    'Browse trusted used cars, bikes, auto-rickshaws, and mini trucks at Budget Motors. Best deals on pre-owned vehicles in Thonichal, Mananthavady, Wayanad, Kerala. Direct WhatsApp enquiry!',
+    'Browse certified pre-owned used cars, trucks, and utility vehicles at Budget Motors Wayanad. The most trusted multi-brand used car showroom in Thonichal, Mananthavady, Wayanad, Kerala. Direct WhatsApp enquiry.',
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: 'https://budgetmotors.in',
-    siteName: 'Budget Motors',
+    siteName: 'Budget Motors Wayanad',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Budget Motors | Quality Pre-Owned Cars',
+        alt: 'Budget Motors Wayanad | Quality Pre-Owned Cars',
       },
     ],
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   verification: {
-    google: 'YOUR_GOOGLE_SEARCH_CONSOLE_CODE',
+    google: 'tJh7FysYLOFD92vE8cmE-QoGAgezHu8j29QqDkw30i0',
   },
 }
 
@@ -48,8 +48,8 @@ export default function RootLayout({
   const dealerSchema = {
     "@context": "https://schema.org",
     "@type": "AutoDealer",
-    "name": "Budget Motors",
-    "description": "Wayanad's most trusted showroom for certified pre-owned multi-brand cars and utility vehicles.",
+    "name": "Budget Motors Wayanad",
+    "description": "Budget Motors Wayanad is the most trusted showroom in Wayanad district for certified pre-owned multi-brand cars and commercial utility vehicles.",
     "url": "https://budgetmotors.in",
     "telephone": "+919747505264",
     "address": {

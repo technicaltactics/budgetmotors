@@ -99,6 +99,7 @@ export default function HomePage() {
             Budget Motors Wayanad
           </span>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-none uppercase italic">
+            <span className="text-white block text-sm sm:text-base md:text-lg font-black tracking-[0.25em] mb-4 text-accent not-italic uppercase">Budget Motors Wayanad</span>
             <span className="text-white block">Drive Your</span>
             <span className="text-accent block mt-1 tracking-wider">Budget</span>
           </h1>
