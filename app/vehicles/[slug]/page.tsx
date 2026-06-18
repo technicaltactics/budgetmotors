@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description,
     openGraph: {
       type: 'website',
-      url: `https://budgetmotors.in/vehicles/${vehicle.slug}/`,
+      url: `https://budgetmotors.vercel.app/vehicles/${vehicle.slug}/`,
       title,
       description,
       images: [
@@ -96,7 +96,7 @@ export default function VehicleDetailPage({ params }: PageProps) {
     "@type": "Product",
     "name": vehicle.title,
     "description": vehicle.description,
-    "image": vehicle.images.map((img) => `https://budgetmotors.in${img}`),
+    "image": vehicle.images.map((img) => `https://budgetmotors.vercel.app${img}`),
     "offers": {
       "@type": "Offer",
       "price": vehicle.price,

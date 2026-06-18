@@ -11,7 +11,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://budgetmotors.in'),
+  metadataBase: new URL('https://budgetmotors.vercel.app'),
   title: {
     default: 'Budget Motors Wayanad | Quality Pre-Owned Cars in Wayanad, Kerala',
     template: '%s | Budget Motors Wayanad',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://budgetmotors.in',
+    url: 'https://budgetmotors.vercel.app',
     siteName: 'Budget Motors Wayanad',
     images: [
       {
@@ -50,7 +50,7 @@ export default function RootLayout({
     "@type": "AutoDealer",
     "name": "Budget Motors Wayanad",
     "description": "Budget Motors Wayanad is the most trusted showroom in Wayanad district for certified pre-owned multi-brand cars and commercial utility vehicles.",
-    "url": "https://budgetmotors.in",
+    "url": "https://budgetmotors.vercel.app",
     "telephone": "+919747505264",
     "address": {
       "@type": "PostalAddress",

@@ -9,7 +9,7 @@ interface Vehicle {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://budgetmotors.in'
+  const baseUrl = 'https://budgetmotors.vercel.app'
   const vehicles = vehiclesData as Vehicle[]
   
   const staticPages = [

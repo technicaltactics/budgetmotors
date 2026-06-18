@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/_next/'],
     },
-    sitemap: 'https://budgetmotors.in/sitemap.xml',
+    sitemap: 'https://budgetmotors.vercel.app/sitemap.xml',
   }
 }
