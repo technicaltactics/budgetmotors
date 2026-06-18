@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0A0A0A] text-[#F5F5F5] antialiased;
+  }
+}
+
+/* Custom transitions and hover states for dark mode cards */
+.hover-card-trigger {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-card-trigger:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -5px rgba(220, 38, 38, 0.12), 0 8px 15px -6px rgba(220, 38, 38, 0.12);
+}
