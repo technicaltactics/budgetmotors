@@ -1,12 +1,11 @@
 'use client'
-import { useState, useMemo } from 'react'
+import { useMemo } from 'react'
 import { useSearchParams } from 'next/navigation'
 import FilterBar from './FilterBar'
 import VehicleCard, { Vehicle } from './VehicleCard'
 import AdSenseAd from './AdSenseAd'
 import vehiclesData from '@/data/vehicles.json'
 
-const ITEMS_PER_PAGE = 6
 
 export default function CatalogClient() {
   const searchParams = useSearchParams()
@@ -77,28 +76,13 @@ export default function CatalogClient() {
     return result
   }, [vehicles, q, type, fuel, price, sort])
 
-  // Pagination limit state
-  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE)
-
-  // Reset pagination visible count when filters change
-  useMemo(() => {
-    setVisibleCount(ITEMS_PER_PAGE)
-  }, [q, type, fuel, price, sort])
-
-  const paginatedVehicles = filteredVehicles.slice(0, visibleCount)
-  const hasMore = filteredVehicles.length > visibleCount
-
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + ITEMS_PER_PAGE)
-  }
-
   // Render items chunked by 6 to insert AdSense ads between them
   const renderListingsWithAds = () => {
     const elements: React.ReactNode[] = []
     const chunk = 6
 
-    for (let i = 0; i < paginatedVehicles.length; i += chunk) {
-      const subList = paginatedVehicles.slice(i, i + chunk)
+    for (let i = 0; i < filteredVehicles.length; i += chunk) {
+      const subList = filteredVehicles.slice(i, i + chunk)
       
       elements.push(
         <div key={`grid-${i}`} className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -132,8 +116,7 @@ export default function CatalogClient() {
       {/* Results Count Summary */}
       <div className="flex items-center justify-between text-sm text-neutral-400 font-semibold pt-2">
         <p>
-          Showing {filteredVehicles.length === 0 ? 0 : paginatedVehicles.length} of{' '}
-          <span className="text-accent font-bold">{filteredVehicles.length}</span> matching{' '}
+          Showing <span className="text-accent font-bold">{filteredVehicles.length}</span> matching{' '}
           {filteredVehicles.length === 1 ? 'vehicle' : 'vehicles'}
         </p>
       </div>
@@ -162,18 +145,6 @@ export default function CatalogClient() {
       ) : (
         <div className="space-y-8">
           {renderListingsWithAds()}
-
-          {/* Load More Button */}
-          {hasMore && (
-            <div className="flex justify-center pt-4">
-              <button
-                onClick={handleLoadMore}
-                className="px-8 py-3.5 bg-accent hover:bg-accent-dark text-white text-sm font-bold uppercase tracking-wider rounded-xl transition-all duration-200 shadow-md hover:shadow-lg"
-              >
-                Load More Vehicles
-              </button>
-            </div>
-          )}
         </div>
       )}
     </div>
