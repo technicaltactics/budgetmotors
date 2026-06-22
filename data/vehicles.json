@@ -86,5 +86,100 @@
     "images": ["/images/vehicles/venue-1.png"],
     "postedDate": "2026-06-18",
     "featured": false
+  },
+  {
+    "id": "11",
+    "slug": "2016-maruti-wagon-r-vxi-bs4",
+    "title": "2016 Maruti Wagon R Vxi BS4",
+    "make": "Maruti",
+    "model": "Wagon R",
+    "variant": "Vxi BS4",
+    "type": "Car",
+    "year": 2016,
+    "price": 340000,
+    "mileage": 68000,
+    "fuel": "Petrol",
+    "transmission": "Manual",
+    "color": "Silver",
+    "location": "Thonichal, Wayanad",
+    "condition": "Excellent",
+    "description": "Maruti Suzuki Wagon R Vxi BS4 2016 model in excellent condition. Powered by a fuel-efficient petrol engine, featuring power windows, power steering, central locking, and robust tall-boy design comfort. Well-maintained and clean interiors.",
+    "features": [
+      "Power Steering",
+      "Power Windows",
+      "AC",
+      "Heater",
+      "Central Locking",
+      "BS4 Compliant",
+      "Fabric Seats"
+    ],
+    "images": [
+      "/images/vehicles/wagonr.png"
+    ],
+    "postedDate": "2026-06-22",
+    "featured": false
+  },
+  {
+    "id": "12",
+    "slug": "2012-maruti-omni",
+    "title": "2012 Maruti Omni",
+    "make": "Maruti",
+    "model": "Omni",
+    "variant": "5-Seater Std",
+    "type": "Car",
+    "year": 2012,
+    "price": 125000,
+    "mileage": 85000,
+    "fuel": "Petrol",
+    "transmission": "Manual",
+    "color": "White",
+    "location": "Thonichal, Wayanad",
+    "condition": "Good",
+    "description": "Maruti Suzuki Omni 2012 model in good running condition. A highly spacious, low maintenance utility van. Featuring sliding doors and efficient petrol engine. Perfect for family or local transport.",
+    "features": [
+      "Manual Steering",
+      "Sliding Doors",
+      "Spacious Cabin",
+      "Low Maintenance",
+      "Cabin Light"
+    ],
+    "images": [
+      "/images/vehicles/omni.png"
+    ],
+    "postedDate": "2026-06-22",
+    "featured": false
+  },
+  {
+    "id": "13",
+    "slug": "2017-maruti-suzuki-vitara-brezza-zdi",
+    "title": "2017 Maruti Suzuki Vitara Brezza ZDi",
+    "make": "Maruti",
+    "model": "Vitara Brezza",
+    "variant": "ZDi",
+    "type": "Car",
+    "year": 2017,
+    "price": 645000,
+    "mileage": 78000,
+    "fuel": "Diesel",
+    "transmission": "Manual",
+    "color": "Grey",
+    "location": "Thonichal, Wayanad",
+    "condition": "Excellent",
+    "description": "Maruti Suzuki Vitara Brezza ZDi 2017 model in excellent condition. Powered by a fuel-efficient and punchy DDiS 200 diesel engine. Features automatic climate control, alloy wheels, dual airbags, ABS, steering mounted controls, and clean premium interiors.",
+    "features": [
+      "Power Steering",
+      "Power Windows",
+      "Alloy Wheels",
+      "Automatic Climate Control",
+      "Dual Airbags",
+      "ABS with EBD",
+      "Steering Mounted Controls",
+      "Projector Headlamps"
+    ],
+    "images": [
+      "/images/vehicles/brezza.png"
+    ],
+    "postedDate": "2026-06-22",
+    "featured": false
   }
 ]
